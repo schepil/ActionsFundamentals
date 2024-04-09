@@ -1,0 +1,29 @@
+name: GitHub Actions Demo
+
+on: 
+  push:
+    branches:
+      - main
+    paths-ignore: 
+      - .github/**
+  pull_request:
+    branches: 
+      - main
+  schedule: 
+    - cron: 15 6 * * 0
+  workflow_dispatch:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build
+    
+    steps:
+      - uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633
+      - run: |
+          echo "Event name is: ${{ github.event_name }}"
+          echo "Branch ref is: ${{ github.ref }}"
+          echo "Repo files: "
+          tree
+  
