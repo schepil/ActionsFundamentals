@@ -29,7 +29,7 @@ Please follow [these instructions](GettingReady.md) and make sure you have set u
 - [x] Events that trigger workflow
 - [x] Jobs and steps
 - [x] :mag: Demo: Creating a workflow
-- [x] 🔨 Hands-on: [My first Action workflow](hol/01-My-first-workflow.md)
+- [ ] 🔨 Hands-on: [My first Action workflow](hol/01-My-first-workflow.md)
 - [ ] Advanced [workflow syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 - [ ] :coffee: Break
 - [ ] GitHub Actions
